@@ -1,80 +1,103 @@
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  
-  .container {
-    margin-top: 30px;
-  }
-  
- 
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  margin-top: 30px;
+}
+
+
+.card {
+  height: 100%;
+  border: none; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold; 
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card .btn-primary {
+  margin-top: auto; 
+}
+
+
+.footer {
+  background-color: #333; 
+  color: white;           
+  padding: 20px 0;        
+  position: relative;
+  bottom: 0;
+  width: 100%;           
+  text-align: center; 
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;        
+}
+
+
+.navbar-nav {
+  margin-left: auto; 
+}
+
+
+.jumbotron-custom {
+  background-image: url('https://st.depositphotos.com/1000163/4876/i/450/depositphotos_48761959-stock-photo-different-perfume-bottles-on-the.jpg'); /* Cambia la URL a una imagen relevante de perfumes */
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  padding: 120px 0; 
+  height: 100vh;
+  text-align: center; 
+}
+
+.jumbotron-custom .display-4 {
+  font-size: 3.5rem; 
+  font-weight: bold; 
+}
+
+.jumbotron-custom .lead {
+  font-size: 1.75rem; 
+  font-style: italic; 
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 1.5rem; 
+  padding: 2rem 0; 
+}
+
+
+@media (max-width: 768px) {
   .card {
-    height: 100%;
+      width: 100%;
   }
-  
-  
-  .card-img-top {
-    width: 100%;
-    height: 150px; 
-    object-fit: cover; 
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .card .btn-primary {
-    margin-top: auto; 
-  }
-  
-  
-  .footer {
-    background-color: #333; 
-    color: white;           
-    padding: 20px 0;        
-    position: relative;
-    bottom: 0;
-    width: 100%;           
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 1rem;        
-  }
-  
-  .navbar-nav {
-    margin-left: auto; 
-  }
-  .jumbotron-custom {
-    background-image: url('https://st.depositphotos.com/1000163/4876/i/450/depositphotos_48761959-stock-photo-different-perfume-bottles-on-the.jpg'); /* Change the URL to a relevant perfume image */
-    background-size: cover; 
-    background-position: center; 
-    color: white; 
-    padding: 120px 0; 
-    height: 100vh;
-  }
-  
-  .jumbotron-custom .display-4 {
-    font-size: 3.5rem; 
-    font-weight: bold; 
-  }
-  
-  .jumbotron-custom .lead {
-    font-size: 1.75rem; 
-    font-style: italic; 
-  }
-  
-  
+}
