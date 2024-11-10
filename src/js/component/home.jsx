@@ -10,7 +10,7 @@ export const products = [
 
 		title: 'Sauvage Eau de Parfum',
 		description: 'Sauvage Eau de Parfum by Dior is a fragrance from the Oriental Fougere olfactory family for men. Sauvage Eau de Parfum was launched in 2018. The nose behind this fragrance is François Demachy. The top note is bergamot; the heart notes are Sichuan pepper, lavender, star anise, and nutmeg; the base notes are ambroxan and vanilla.',
-		image: 'https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw5becafc8/Y0785220/Y0785220_F078522009_E01_ZHC.jpg?sw=1800&sh=1200',
+		image: 'https://media.douglas.es/medias/7M2hEs995604-0-global.png?context=bWFzdGVyfGltYWdlc3w2NjMwODF8aW1hZ2UvcG5nfGFEQmtMMmhsWkM4MU1EUTFNREUxT0RBeU5qYzRNaTgzVFRKb1JYTTVPVFUyTURSZk1GOW5iRzlpWVd3dWNHNW58ZThiNDhkODQwNTA1NWJiNGM2M2IyOGNhMGJjMDJjOTMwMTE2ZWQ2MzIwZjUwNDM4NGJlYWYyZTQ1NzliNWM4Mg&grid=true&transparent=true&imPolicy=grayScaledtransparent&imdensity=1&imwidth=775',
 	},
 	{
 
@@ -38,7 +38,7 @@ const Home = () => {
 		<>
 			<Navbar />
 			<Jumbotron />
-			<SectionCards products={products}/>
+			<SectionCards products={products} />
 			<Footer />
 		</>
 	);

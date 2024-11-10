@@ -3,7 +3,7 @@ import { Card } from "./cards";
 
 export const SectionCards = ({ products }) => {
     return (
-        <div className="card-container">
+        <div className="card-container row">
             {products.map((card, index) => (
                 <Card
                     key={`${card.name}-${index}`}
